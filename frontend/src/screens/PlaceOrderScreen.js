@@ -91,7 +91,7 @@ function PlaceOrderScreen({ history }) {
                                                     </Col>
 
                                                     <Col md={4}>
-                                                        {item.qty} X ${item.price} = ${(item.qty * item.price).toFixed(2)}
+                                                        {item.qty} X Sum {item.price} = {(item.qty * item.price).toFixed(2)} Sum
                                                     </Col>
                                                 </Row>
                                             </ListGroup.Item>

@@ -18,9 +18,9 @@ class Migration(migrations.Migration):
             name='Order',
             fields=[
                 ('paymentMethod', models.CharField(blank=True, max_length=200, null=True)),
-                ('taxPrice', models.DecimalField(blank=True, decimal_places=2, max_digits=7, null=True)),
-                ('shippingPrice', models.DecimalField(blank=True, decimal_places=2, max_digits=7, null=True)),
-                ('totalPrice', models.DecimalField(blank=True, decimal_places=2, max_digits=7, null=True)),
+                ('taxPrice', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
+                ('shippingPrice', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
+                ('totalPrice', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
                 ('isPaid', models.BooleanField(default=False)),
                 ('paidAt', models.DateTimeField(blank=True, null=True)),
                 ('isDelivered', models.BooleanField(default=False)),
